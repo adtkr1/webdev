@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership</title>
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        h1
+        {
+            text-align: center;
+            color: #d2d2d2;
+        }
+        .form
+        {
+            
+            margin: auto;
+            width: 600px;
+            height: 520px;
+            background-color: rgb(241, 240, 240,0.9);
+            padding:15px;
+            border-radius: 10px;
+        }
+        .row
+        {
+           
+            text-align: left;
+            margin: 10px;
+        }
+        .field
+        {
+            
+            font-size: 18px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .chk
+        {
+            width:300px;
+            height: 30px;
+            border-radius: 7px;
+            padding-left: 10px ;
+        }
+        .ch
+        {
+            
+            border-radius: 7px;
+        }
+        #payment
+        {
+            height:25px;
+            border-radius: 7px;
+        }
+        .sub
+        {
+            text-align: center;
+        }
+        button{
+            border-radius: 7px;
+            cursor: pointer;
+            width:90px;
+            height:30px;
+            background-color: rgb(170, 236, 175);
+        }
+        button:hover
+        {
+            background-color: rgb(78, 170, 86);
+        }
+        main
+        {
+            background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/17/36/X7lQwx.jpg");
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left">ADITYA KUMAR</div>
+        <div class="right">
+            <a href="nav.html" target="_blank"><p class="menu">Home</p></a>
+            <a href="#"><p class="menu">Membership</p></a>
+            <a href="education.html" target="_blank"><p class="menu">Education</p></a>
+            <a class="ex1" href="Contactus.html" target="_blank">Contact Me</a>
+        </div>
+    </nav>
+    <main>
+         <h1>Membership Fee: Rs.100</h1>
+         <div class="form">
+             <form action="backend.php">
+                 <div class="row">
+                 <div class="field">
+                 <label for="name">Name :</label>
+                 </div>
+                 <div class="fill">
+                 <input type="text" name="fullname" id="name" placeholder="Enter Your Full Name"
+                 class="chk" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="field">
+                    <label for="email">Email :</label>
+                    </div>
+                    <div class="fill">
+                    <input type="email" name="emailid" id="email" placeholder="Enter Your Email-id"
+                    class="chk" required>  
+                </div>
+                </div>
+                <div class="row">
+                <div class="field">
+                    <label for="contact">Mobile Number :</label>
+                    </div>
+                    <div class="fill">
+                    <input type="tel" name="contactno" id="contact" placeholder="Enter Your Mobile Number"
+                    class="chk" required>
+                   </div>
+                </div>
+                <div class="row">
+                   <div class="field">
+                    <label for="address">Address :</label>
+                    </div>
+                    <div class="fill">
+                    <textarea name="Address" id="address" cols="50" rows="7" class="ch" placeholder="Enter Address" required></textarea>
+                </div>
+                <div class="row">
+                    <div class="field">
+                        <label for="payment">Payment method :</label>
+                        </div>
+                        <div class="fill">
+                        <select name="payment" id="payment" required>
+                            <option value="">--Choose a option--</option>
+                            <option value="credit">
+                                Credit Card
+                            </option>
+                            <option value="Debit">Debit Card</option>
+                            <option value="UPI">UPI</option>
+                            <option value="EMI">EMI</option>
+                            <option value="netbanking">Net Banking</option>
+                        </select >  
+                    </div>
+                <div class="row sub">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                </div>
+             </form>
+         </div>
+    </main>
+</body>
+</html>
